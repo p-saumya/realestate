@@ -235,6 +235,17 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                                 {listing.description}
                             </p>
                         </div>
+                        
+                        <div className="maps-description">
+                            <div className="link-bar my-4">
+                                <h3 style={{fontWeight: 'bold' }}>Maps Location</h3>
+                            </div>
+                            <p className="text-justify">
+                
+                                {listing.maps_location=="na" ? <div>na</div> :<iframe src={listing.maps_location} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
+                            </p>
+                        </div>
+
                         <div className="image-section">
                             <div className="link-bar my-4">
                                 <h3 style={{fontWeight: 'bold' }}>Photos</h3>

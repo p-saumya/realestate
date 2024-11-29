@@ -18,6 +18,7 @@ class Listing(models.Model):
     slug = models.CharField(max_length=200, unique=True)
     title = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
+    maps_location=models.CharField(max_length=1000,default="na")
     city = models.CharField(max_length=200)
     state = models.CharField(max_length=100)
     zipcode = models.CharField(max_length=20)
