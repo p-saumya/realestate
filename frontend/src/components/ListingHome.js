@@ -52,7 +52,6 @@ const ListingHome = ({ listings }) => {
                                     photo_main={val.photo_main}
                                     address={val.address}
                                     city={val.city}
-                                    state={val.state}
                                     price={val.price}
                                     bedrooms={val.bedrooms}
                                     bathrooms={val.bathrooms}

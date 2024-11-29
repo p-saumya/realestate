@@ -181,11 +181,6 @@ class SearchView(APIView):
 
         print(f"Received data: {queryset}")
 
-        # House should be Open True
-        # open_house = True
-        # queryset = queryset.filter(open_house__iexact=open_house)
-        # print(f"Received data: {queryset}")
-
         # Keywords
         keywords = data.get('keywords')
         queryset = queryset.filter(description__icontains=keywords)

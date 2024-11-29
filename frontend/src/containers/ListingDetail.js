@@ -114,7 +114,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                     <header className="heading-component">
                         <h1 className="font-weight-bold">{listing.title}</h1>
                         <h6 className="">
-                            {listing.city}, {listing.state}, {listing.zipcode}
+                            {listing.city}, {listing.zipcode}
                         </h6>
                     </header>
                     <div className="container mt-3 ">
@@ -164,15 +164,16 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                                                     {listing.home_type}
                                                 </p>
                                             </li>
-                                            <li>
-                                                <p className="m-1">
-                                                    Area: {listing.sqft} sqft.
-                                                </p>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                     <div className="col-md-6">
                                         <ul>
+                                        <li>
+                                                <p className="m-1">
+                                                    Area: {listing.sqft} sqft.
+                                                </p>
+                                            </li>
                                             <li>
                                                 <p className="m-1">
                                                     Street: {listing.address}
@@ -183,11 +184,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                                                     City: {listing.city}
                                                 </p>
                                             </li>
-                                            <li>
-                                                <p className="m-1">
-                                                    State: {listing.state}
-                                                </p>
-                                            </li>
+                                            
                                             <li>
                                                 <p className="m-1">
                                                     Zipcode: {listing.zipcode}
@@ -195,7 +192,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                                             </li>
                                             <li>
                                                 <p className="m-1">
-                                                    country: {listing.country}
+                                                    Country: {listing.country}
                                                 </p>
                                             </li>
                                         </ul>
