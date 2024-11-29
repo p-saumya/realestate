@@ -237,7 +237,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                             <div className="link-bar my-4">
                                 <h3 style={{fontWeight: 'bold' }}>Maps Location</h3>
                             </div>
-                            <p className="text-justify">
+                            <p className="text-justify padding-map">
                 
                                 {listing.maps_location=="na" ? <div>Location not found </div> :<iframe src={listing.maps_location} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
                             </p>

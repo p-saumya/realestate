@@ -126,6 +126,7 @@ body {
 
 .image-div figure img {
     border-radius: 8px;
+    height: 200px;
 }
 
 /* Buttons for Listing */
@@ -193,4 +194,6 @@ h5 {
     padding: 10px;
 }
 
-
+.padding-map{
+    padding-left: 20px;
+}
