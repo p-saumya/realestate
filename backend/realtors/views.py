@@ -14,10 +14,3 @@ class RealtorListView(ListAPIView):
 class RealtorView(RetrieveAPIView):
     queryset = Realtor.objects.all()
     serializer_class = RealtorSerialier
-
-
-class TopSellerView(ListAPIView):
-    permission_classes = (permissions.AllowAny, )
-    queryset = Realtor.objects.filter(top_seller=True)
-    serializer_class = RealtorSerialier
-    pagination_class = None

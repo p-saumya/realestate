@@ -32,7 +32,7 @@ const Login = ({ login, isAuthenticated }) => {
 		<>
 			<div className='container'>
 				<Helmet>
-					<title>AD-WISE - Login</title>
+					<title>Real Estate - Login</title>
 					<meta name='description' content='login page' />
 				</Helmet>
 				<h1 className='text-center font-weight-bolder brand-heading title-heading py-3'>
@@ -81,7 +81,7 @@ const Login = ({ login, isAuthenticated }) => {
 				</form>
 				<div className='my-5'>
 					<h5 className='text-center pt-5'>
-						Copyright &copy; AD-WISE 2024 | All Right Reserved
+						Copyright &copy; Real Estate 2024 | All Right Reserved
 					</h5>
 				</div>
 			</div>

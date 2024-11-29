@@ -37,7 +37,7 @@ const Signup = ({ setAlert, isAuthenticated, signup }) => {
 	return (
 		<div className='container'>
 			<Helmet>
-				<title>AD-WISE - Signup</title>
+				<title>Real Estate - Signup</title>
 				<meta name='description' content='sign up page' />
 			</Helmet>
 			<h1 className='text-center font-weight-bolder brand-heading title-heading py-3'>
@@ -105,7 +105,7 @@ const Signup = ({ setAlert, isAuthenticated, signup }) => {
 			</form>
 			<div className='mt-5'>
 				<h5 className='text-center'>
-					Copyright &copy; Rajan Gautam, 2021 | All Right Reserved
+					Copyright &copy; Real Estate, 2024 | All Right Reserved
 				</h5>
 			</div>
 		</div>

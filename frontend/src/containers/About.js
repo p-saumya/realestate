@@ -53,11 +53,11 @@ const About = () => {
 	return (
 		<main className='about'>
 	<Helmet>
-		<title>AD-WISE - About</title>
+		<title>Real Estate - About</title>
 		<meta name='description' content='About us' />
 	</Helmet>
 	<header className='heading-component'>
-		<h1 className='font-weight-bold'>AD-WISE</h1>
+		<h1 className='font-weight-bold'>Real Estate</h1>
 	</header>
 	<section className='container my-3'>
 		<div className='row'>
@@ -66,7 +66,7 @@ const About = () => {
 					We find the perfect home for you
 				</h1>
 				<p className='text-justify-center'>
-							Ad-wise is website to find you the perfect home you are looking
+						Real Estate is website to find you the perfect home you are looking
 							for . It shows you options to Buy or rent shows . One can choose 
 							from wide range of options and can even browse through other 
 							options . It is easy to use as filter can help to navigate through
@@ -86,34 +86,6 @@ const About = () => {
 				Start today to explore available homes.
                
 				</p>
-			</div>
-		</div>
-	</section>
-
-	{/* Top Seller Section */}
-	<section className='container my-4'>
-		<div className='row justify-content-center'>
-			<div className='col-md-3'>
-				{topSeller.map((val, ind) => (
-					<div key={ind} className='top-seller-card'>
-						<h2>Top Seller</h2>
-						<figure>
-							<img
-								src={val.photo}
-								alt={val.name}
-								width='100%'
-								height='auto'
-								className='seller-image'
-							/>
-						</figure>
-						<div className='details-realtor'>
-							<h2>{val.name}</h2>
-							<h5>{val.phone}</h5>
-							<h5>{val.email}</h5>
-							<p>{val.description}</p>
-						</div>
-					</div>
-				))}
 			</div>
 		</div>
 	</section>

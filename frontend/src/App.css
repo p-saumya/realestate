@@ -1,18 +1,18 @@
-*,
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Import Google Fonts */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bebas+Neue&family=Roboto:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..400&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
 
-    /* background-image: url('https://wallpapers.com/images/high/real-estate-low-angle-shot-c9wnxm14uva0ydio.webp'); */
+    background-image: url('https://wallpapers.com/images/high/real-estate-low-angle-shot-c9wnxm14uva0ydio.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,97 +23,75 @@ body {
 
     min-height: 100vh;
 }
-
 .padding-left {
     padding-left: 10px;
 }
 
-/* Circular Nav */
-.toggle-menu {
-    border: none !important;
-    background-color: #1E3A8A !important;
-    transition: all 1s !important;
+.navbar {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    background-color: #1E3A8A; 
+    border-bottom: 1px solid #ddd; 
+    height: 60px; 
+    width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px;
+
 }
 
-.toggle-menu:hover {
-    background-color: #010f37 !important;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; 
 }
-
-.circular-nav-left,
-.circular-nav-right {
-    position: absolute;
-    top: 40px;
+.nav-heading{
+    color:#ffffff;
+    font-size: 30px;
 }
-
-.circular-nav-left {
-    left: 40px;
-}
-
-.circular-nav-right {
-    right: 40px;
-}
-
-.menu-item {
-    border: none !important;
-    background-color: #FFFFFF !important;
-    transition: all 1s !important;
-}
-
-.menu-item:hover {
-    background-color: #DCE6F7 !important;
-}
-
-.brand-heading {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4.2rem;
-    font-weight: 1000;
-    letter-spacing: 2px;
-    color: #010f37;
-    background-image: linear-gradient(90deg, #1E3A8A, #042d42);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 90px;
-}
-
-@media (max-width: 1200px) {
-    .brand-heading {
-        font-size: 2.8rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .brand-heading {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 850px) {
-    .brand-heading {
-        font-size: 1.5rem;
-    }
-}
-
-/* Buttons */
-.getbackbtn {
+.nav-heading:hover{
     color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #a7ff43, #1E3A8A);
-    transition: all 1s;
+}
+.navbar-links,
+
+.navbar-actions {
+    display: flex;
+    gap: 15px;
 }
 
-.getbackbtn:hover {
-    transform: translateX(2px) translateY(-4px);
+.nav-item {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-@media (max-width: 768px) {
-    .getbackbtn {
-        font-size: 1.5rem;
-    }
+.nav-item:hover {
+    color: #a0c4ff;
 }
+
+.navbar-actions .nav-item {
+    cursor: pointer;
+    background-color: #1E3A8A; 
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.navbar-actions .nav-item:hover {
+    background-color: #1E3A8A; 
+    color: #ffffff; 
+}
+
 
 /* Card */
 .card {
@@ -121,6 +99,7 @@ body {
     padding: 0.3rem;
     border-radius: 0.6rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 570px;
 }
 
 .card-image img {
@@ -131,13 +110,14 @@ body {
 .heading-component {
     text-align: center;
     padding: 16px 0;
-    color: rgb(2, 32, 140);
+    color: #1E3A8A;
 }
 
 .link-bar {
-    background-color: #517acd;
+    background-color: #1E3A8A;
     text-align: left;
     padding: 8px 12px;
+    color: #ffffff;
 }
 
 .detail {
@@ -150,7 +130,7 @@ body {
 
 /* Buttons for Listing */
 .buynow .btn-buynow {
-    background-color: #749ac7;
+    background-color: #6991fe;
     color: white;
     padding: 10px 20px;
     border-radius: 6px;
@@ -168,7 +148,7 @@ h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #01375b;
+    color: #1E3A8A
 }
 
 @media (max-width: 1000px) {
@@ -193,6 +173,7 @@ h5 {
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 350px;
+    height: 600px;
 }
 
 .top-seller-card:hover,
@@ -212,8 +193,4 @@ h5 {
     padding: 10px;
 }
 
-.make-payment-div {
-    background-color: #749ac7;
-    color: white;
-    padding: 10px;
-}
+

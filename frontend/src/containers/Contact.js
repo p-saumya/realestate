@@ -63,7 +63,7 @@ const Contact = ({ setAlert }) => {
     return (
         <div className="contact">
             <Helmet>
-                <title>AD-WISE - Contact</title>
+                <title>Real Estate - Contact</title>
                 <meta name="description" content="Contact us" />
             </Helmet>
             <div className="heading-component">
@@ -82,8 +82,7 @@ const Contact = ({ setAlert }) => {
                             <div className="col-10">
                                 <h4>Location:</h4>
                                 <p>
-                                    B2-710, High Rise Hostel, PDEU, Gandhinagar,
-                                    382007, Gujarat
+                                    Ahmedabad , Gujarat
                                 </p>
                             </div>
                         </div>
@@ -97,7 +96,7 @@ const Contact = ({ setAlert }) => {
                             </div>
                             <div className="col-10">
                                 <h4>Email:</h4>
-                                <p>rajan@rockriver.com</p>
+                                <p>panch.saumya@gmail.com</p>
                             </div>
                         </div>
 
@@ -110,19 +109,24 @@ const Contact = ({ setAlert }) => {
                             </div>
                             <div className="col-10">
                                 <h4>Phone:</h4>
-                                <p>+91 9512245920</p>
+                                <p>+91 1234567890</p>
                             </div>
                         </div>
                         <div>
-                            <iframe
-                                width="100%"
-                                height="250"
-                                frameborder="0"
-                                scrolling="no"
-                                marginheight="0"
-                                marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=250&amp;hl=en&amp;q=Pandit%20Deendayal%20Energy%20University+(Pandit%20Deendayal%20Energy%20University)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                            ></iframe>
+                        <iframe
+  width="100%"
+  height="250"
+  frameBorder="0"
+  scrolling="no"
+  marginHeight="0"
+  marginWidth="0"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.918542954413!2d72.48409787533492!3d22.99002267919662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aee6c89a621%3A0x872df2d55fbb0008!2sLJ%20University!5e0!3m2!1sen!2sin!4v1732897362833!5m2!1sen!2sin"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
                         </div>
                     </div>
                     <div className="col-md-6">

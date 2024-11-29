@@ -25,10 +25,8 @@ class CreateOrderView(APIView):
 
             order.save()
 
-            # Find the associated listing by slug
             listing = Listing.objects.get(slug=data['cart_slug'])
             
-            # Mark the listing as not published
             listing.is_published = False
             
             listing.save()

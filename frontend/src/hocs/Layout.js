@@ -1,15 +1,11 @@
 import React from "react";
-import Heading from "../Header/Heading";
-import NavLeft from "../Header/NavLeft";
-import NavRight from "../Header/NavRight";
+import NavBar from "../Header/NavBar";
 
 const Layout = (props) => {
 	return (
 		<>
 			<div className='container mt-5 mb-2'>
-				<Heading />
-				<NavLeft />
-				<NavRight />
+				<NavBar/>
 				<hr />
 			</div>
 			{props.children}

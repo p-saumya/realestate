@@ -106,7 +106,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
     return (
         <>
             <Helmet>
-                <title>AD-WISE - {`${listing.title}`}</title>
+                <title>Real Estate - {`${listing.title}`}</title>
                 <meta name="description" content="Listing detail" />
             </Helmet>
             {isAuthenticated ? (
@@ -242,7 +242,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                             </div>
                             <p className="text-justify">
                 
-                                {listing.maps_location=="na" ? <div>na</div> :<iframe src={listing.maps_location} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
+                                {listing.maps_location=="na" ? <div>Location not found </div> :<iframe src={listing.maps_location} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
                             </p>
                         </div>
 
