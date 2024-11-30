@@ -85,7 +85,7 @@ const Buy = ({ match, isAuthenticated, email }) => {
                 setLoading(false);
                 setShow(true);
                 setError(false);
-                setAlert("Order Placed Successfully");
+                setAlert("Mobile no: 1234567890");
                 setCoupon({ coupon: "" });
             })
             .catch((err) => {
@@ -124,7 +124,6 @@ const Buy = ({ match, isAuthenticated, email }) => {
                                     <ul className="list-unstyled">
                                         <li><p className="m-1">Street: {listing.address}</p></li>
                                         <li><p className="m-1">City: {listing.city}</p></li>
-                                        <li><p className="m-1">State: {listing.state}</p></li>
                                         <li><p className="m-1">Zipcode: {listing.zipcode}</p></li>
                                         <li><p className="m-1">Country: {listing.country}</p></li>
                                     </ul>
@@ -176,7 +175,7 @@ const Buy = ({ match, isAuthenticated, email }) => {
                                             type="submit"
                                             className="btn btn-primary my-3 w-100"
                                         >
-                                            Book
+                                            Contact Owner
                                         </button>
                                     </form>
                                 )}

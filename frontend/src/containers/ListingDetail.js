@@ -239,7 +239,7 @@ const ListingDetail = ({ match, isAuthenticated, setAlert }) => {
                             </div>
                             <p className="text-justify padding-map">
                 
-                                {listing.maps_location=="na" ? <div>Location not found </div> :<iframe src={listing.maps_location} width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
+                                {listing.maps_location=="na" ? <div>Location not found </div> :<iframe src={listing.maps_location} width="1070" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>}
                             </p>
                         </div>
 
